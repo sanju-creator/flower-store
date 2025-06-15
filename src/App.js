@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import DashboardLayout from './layouts/DashboardLayout';
+
 
 const S3_BUCKET_URL = "https://freshpetals.s3.us-east-1.amazonaws.com/"; // Replace with your bucket URL
 
@@ -9,11 +11,18 @@ const flowers = [
   "1000002358.jpg"
 ];
 
-const WHATSAPP_NUMBER = "917827815428"; // Replace with your WhatsApp number
+const WHATSAPP_NUMBER = "917827815428"; 
 
 function App() {
   const [search, setSearch] = useState("");
   const [filtered, setFiltered] = useState(flowers);
+  return(
+    <DashboardLayout>
+      <FlowerStore search={search} setSearch={setSearch} filtered={filtered} />
+    </DashboardLayout>
+  )
+}{
+  
 
   useEffect(() => {
     setFiltered(
