@@ -1,6 +1,5 @@
 // export default App;
 import React, { useEffect, useState } from 'react';
-import DashboardLayout from './layouts/DashboardLayout';
 
 const S3_BUCKET_URL = 'https://freshpetals.s3.us-east-1.amazonaws.com/'; // Replace with your real bucket URL
 
