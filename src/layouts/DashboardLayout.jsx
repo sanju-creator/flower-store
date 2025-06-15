@@ -19,7 +19,7 @@ import {
   PlusIcon,
   ShieldCheckIcon,
   UserIcon,
-} from '@heroicons/react/16/solid';
+} from '@heroicons/react/24/solid';
 import { InboxIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid';
 
 const navItems = [
