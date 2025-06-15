@@ -28,7 +28,7 @@ function App() {
   return (
     <DashboardLayout>
       <div className="p-6">
-        <h1 className="text-3xl font-bold mb-4">🌸 Flower Store</h1>
+        <h1 className="text-3xl font-bold mb-4">🌸 Fresh Petals</h1>
 
         <div className="max-w-md mb-6">
           <input
