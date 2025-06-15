@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fresh Petals</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-pink-200 py-4 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <a href="#" class="text-xl font-bold text-pink-800">🌸 Fresh Petals</a>
+
+      <!-- Mobile Hamburger -->
+      <button id="menuBtn" class="sm:hidden focus:outline-none">
+        <svg class="w-6 h-6 text-pink-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- Desktop Menu -->
+      <div id="menu" class="hidden sm:flex space-x-4">
+        <a href="#about" class="text-pink-700 hover:underline">About</a>
+        <a href="#products" class="text-pink-700 hover:underline">Products</a>
+        <a href="#contact" class="text-pink-700 hover:underline">Contact</a>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="sm:hidden hidden px-4 pt-2 pb-4 bg-pink-100 space-y-2">
+      <a href="#about" class="block text-pink-700 hover:underline">About</a>
+      <a href="#products" class="block text-pink-700 hover:underline">Products</a>
+      <a href="#contact" class="block text-pink-700 hover:underline">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-pink-100 py-6 shadow-sm">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl font-bold text-pink-800">🌷 Welcome to Fresh Petals</h1>
+      <p class="text-gray-600">Fresh Flowers Delivered Daily</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="py-12 bg-white" id="about">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold text-pink-800 mb-4">About Us</h2>
+      <p class="text-gray-700">We offer beautiful, fresh flowers handpicked with love. Our shop specializes in roses, tulips, orchids, and seasonal bouquets.</p>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="py-12 bg-pink-50" id="products">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold text-pink-800 mb-4">Our Flowers</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div>
+          <img src="https://freshpetals.s3.us-east-1.amazonaws.com/1000002966.jpg" alt="Rose" class="w-full h-64 object-cover rounded shadow">
+          <p class="mt-2 text-center text-gray-700">Red Roses</p>
+        </div>
+        <div>
+          <img src="https://freshpetals.s3.us-east-1.amazonaws.com/1000003717.jpg" alt="Tulip" class="w-full h-64 object-cover rounded shadow">
+          <p class="mt-2 text-center text-gray-700">Yellow Tulips</p>
+        </div>
+        <div>
+          <img src="https://freshpetals.s3.us-east-1.amazonaws.com/1000004834.jpg" alt="Orchid" class="w-full h-64 object-cover rounded shadow">
+          <p class="mt-2 text-center text-gray-700">Orchids</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-12 bg-white" id="contact">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold text-pink-800 mb-4">Contact Us</h2>
+      <form id="contactForm" class="space-y-4 max-w-md">
+        <input type="text" placeholder="Your Name" required class="w-full p-2 border border-gray-300 rounded">
+        <input type="email" placeholder="Your Email" required class="w-full p-2 border border-gray-300 rounded">
+        <textarea placeholder="Your Message" required class="w-full p-2 border border-gray-300 rounded"></textarea>
+        <button type="submit" class="bg-pink-600 text-white py-2 px-4 rounded hover:bg-pink-700">Send</button>
+        <p id="formMsg" class="text-green-600 hidden">Thank you! We'll get back to you soon.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-pink-100 py-6 mt-12">
+    <div class="text-center text-gray-600">
+      &copy; 2025 Fresh Petals. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
